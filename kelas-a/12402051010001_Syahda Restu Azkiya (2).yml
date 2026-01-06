@@ -1,0 +1,297 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\salma\Documents
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 72
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 34
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 1497
+    content: "\e[?9001h\e[?1004h"
+  - delay: 333
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e]0;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 14
+    content: "\e[?25l\e[7;1H\e[?25h"
+  - delay: 361
+    content: 'PS C:\Users\salma\Documents> '
+  - delay: 10058
+    content: "\e[?25l"
+  - delay: 18
+    content: "\e[93mm\e[?25h"
+  - delay: 259
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\bmy\e[?25h"
+  - delay: 273
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[7;30Hmys\e[?25h"
+  - delay: 756
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[7;30Hmysq\e[?25h"
+  - delay: 274
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[7;30Hmysql\e[?25h"
+  - delay: 15361
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[7;30Hmysql \e[?25h"
+  - delay: 731
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[7;30Hmysql \e[37m-\e[?25h"
+  - delay: 770
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[7;30Hmysql \e[90m-u\e[?25h"
+  - delay: 535
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[7;30Hmysql \e[90m-u \e[?25h"
+  - delay: 330
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[7;30Hmysql \e[90m-u \e[37mr\e[?25h"
+  - delay: 178
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[7;30Hmysql \e[90m-u \e[37mro\e[?25h"
+  - delay: 194
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[7;30Hmysql \e[90m-u \e[37mroo\e[?25h"
+  - delay: 495
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[7;30Hmysql \e[90m-u \e[37mroot\e[?25h"
+  - delay: 404
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[7;30Hmysql \e[90m-u \e[37mroot \e[?25h"
+  - delay: 897
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[7;30Hmysql \e[90m-u \e[37mroot -\e[?25h"
+  - delay: 3127
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[7;30Hmysql \e[90m-u \e[37mroot \e[90m-p\e[?25h"
+  - delay: 825
+    content: "\e[m"
+  - delay: 21
+    content: "\r\n"
+  - delay: 187
+    content: E
+  - delay: 10
+    content: 'nter password: '
+  - delay: 1302
+    content: '*'
+  - delay: 222
+    content: '*'
+  - delay: 190
+    content: '*'
+  - delay: 1072
+    content: '*'
+  - delay: 257
+    content: '*'
+  - delay: 381
+    content: '*'
+  - delay: 664
+    content: "\r\n"
+  - delay: 121
+    content: Welcome to the MariaDB monitor.  Commands end with ; or \g.
+  - delay: 26
+    content: "\e[?25l\r\nYour MariaDB connection id is 7\r\nServer version: 11.8.5-MariaDB MariaDB Server\e[13;1HCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[15;1HType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\e[18;1HMariaDB [(none)]> \e[?25h"
+  - delay: 9210
+    content: u
+  - delay: 200
+    content: s
+  - delay: 221
+    content: e
+  - delay: 6945
+    content: ' '
+  - delay: 565
+    content: toko_kelontong;
+  - delay: 879
+    content: "\r\n"
+  - delay: 18
+    content: "Database changed\r\nMariaDB [toko_kelontong]> "
+  - delay: 7886
+    content: show databases;
+  - delay: 2385
+    content: "\r\n"
+  - delay: 12
+    content: "+---------------------+\r\n| Database            |\r\n+---------------------+\r\n| cla"
+  - delay: 18
+    content: "ssmeeting        |\r\n| contoh 1            |\r\n| information_schema  |\r\n| mysql"
+  - delay: 14
+    content: "               |\r\n| performance_schema  |\r\n| perpustakaan        |\r\n| restaurant "
+  - delay: 13
+    content: "         |\r\n| sistem_perpustakaan |\r\n| sys                 |\r\n| test                |\r\n| toko_kelont"
+  - delay: 7
+    content: "ong      |\r\n+---------------------+\r\n11 rows in set (0.006 sec)\r\n"
+  - delay: 6
+    content: "\nMariaDB [toko_kelontong]>\e[1C"
+  - delay: 7911
+    content: select database();
+  - delay: 932
+    content: "\r\n+----------------+\r\n| database()     |\r\n+----------------+\r\n| toko_kelontong |\r\n+----------------+\r\n1 row in set (0.001 sec)\r\n"
+  - delay: 20
+    content: "\nMariaDB [toko_kelontong]>\e[1C"
+  - delay: 14989
+    content: select * from pelanggan;
+  - delay: 906
+    content: "\r\n+--------------+--------------+------------------+--------------+\e[?25l\r\n| id_pelanggan | nama         | alamat           | no_telepon   |       \e[34;66H\e[?25h\e[?25l\r\n+--------------+--------------+------------------+--------------+       \e[34;66H\e[?25h"
+  - delay: 10
+    content: "\r\n|            1 | ahmad fauzi  | jl. melati no. 5 | 085782339890 |"
+  - delay: 11
+    content: "\e[?25l\r\n|            2 | siti nurbaya | jl. jati no. 6   | 08123456789  |       \e[34;66H\e[?25h\e[?25l\r\n+--------------+--------------+------------------+--------------+       \e[34;66H\e[?25h\r\n2 rows in set (0.001 sec)\r\n\n"
+  - delay: 16
+    content: 'MariaDB [toko_kelontong]> '
+  - delay: 7994
+    content: select * from barang;
+  - delay: 1774
+    content: "\r\n"
+  - delay: 5
+    content: "+-----------+-----------------+----------+-------+------+\r\n| id_barang | nama_barang     | kategori | harga | stok |\r\n+-----------+-----------------+----------+-------+------+\r\n|         1 | beras ramos 5kg | sembako  | 65000 |   20 |\r\n+-----------+-----------------+----------+-------+------+\r\n1 row in set (0.001 sec)\r\n\nMariaDB [toko_kelontong]>\e[1C"
+  - delay: 1515
+    content: e
+  - delay: 369
+    content: x
+  - delay: 361
+    content: i
+  - delay: 292
+    content: t
+  - delay: 1912
+    content: "\r\nBye"
+  - delay: 20
+    content: "\r\n"
+  - delay: 17
+    content: 'PS C:\Users\salma\Documents> '
+  - delay: 1092
+    content: "\e[?25l"
+  - delay: 12
+    content: "\e[93me\e[?25h"
+  - delay: 252
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\bex\e[?25h"
+  - delay: 360
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[34;30Hexi\e[?25h"
+  - delay: 306
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[92m\e[34;30Hexit\e[?25h"
+  - delay: 728
+    content: "\e[m"
+  - delay: 20
+    content: "\r\n"
